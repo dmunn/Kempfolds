@@ -1,0 +1,4 @@
+slackclient
+atoma
+requests
+bs4
