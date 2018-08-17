@@ -2,3 +2,4 @@ slackclient
 atoma
 requests
 bs4
+responses
