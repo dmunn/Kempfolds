@@ -3,8 +3,11 @@ venv
 bin
 lib
 pyvenv.cfg
-
+**/__pycache*
 pip-selfcheck.json
 
 # IDEs
 .idea
+/bin
+/lib
+pyvenv.cfg
