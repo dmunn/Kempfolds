@@ -33,5 +33,6 @@ class TestKempfolds(unittest.TestCase):
         response = MockBlog.get_posts()
         self.assertTrue(len(response.entries) > 0, "Ensure there is at least one entry in our returned Atom feed")
 
+
 if __name__ == "__main__":
     TestKempfolds()

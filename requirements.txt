@@ -3,3 +3,4 @@ atoma
 requests
 bs4
 responses
+flake8
