@@ -8,20 +8,30 @@ from Kempfolds.Kempfolds import Kempfolds
 
 class TestKempfolds(unittest.TestCase):
 
-    @patch('Kempfolds.Kempfolds')
-    def test_kempfolds_response_is_not_empty(self, MockBlog):
-        blog_response = response_content
+    # Example 1 - Test a mocked response body I created. Is this worth it, please let me know?
+    def test_kempfolds_response_is_not_empty(self):
+        """
+        Test getting content from our Blog
+        """
+        response = response_content
+        # Check the content is not empty
+        self.assertIsNotNone(response)
 
-        self.assertIsNotNone(blog_response)
-
+    # Test a mocked Kempfolds class's content for type checking... or so I thought
     @patch('Kempfolds.Kempfolds')
     def test_kempfolds_response_is_of_type_bytes(self, MockBlog):
         blog_response = response_content
 
         self.assertEqual(type(blog_response), bytes)
 
+    # Use responses to mock the responses body and content_type
     @responses.activate
     def test_kempfolds_get_posts_is_of_valid_type(self):
+        """
+        Test that we have at least one blog entry once it's parsed by Atoma.
+        Create the mocked response using responses and then call the the get_posts method which will use the mocked response
+        instead of calling out to the real life URL for a response.
+        """
         responses.add(
             responses.GET,
             "http://kempfolds.blogspot.com/feeds/posts/default",
