@@ -3,5 +3,4 @@ atoma
 requests
 bs4
 responses
-flake8
 pytest
