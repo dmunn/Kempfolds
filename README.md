@@ -1,7 +1,7 @@
 # Kempfolds Slack Bot
 
 <!-- PROJECT SHIELDS -->
-([![Build Status](https://travis-ci.org/dmunn/Kempfolds.svg?branch=master)](https://travis-ci.org/dmunn/Kempfolds))
+[![Build Status](https://travis-ci.org/dmunn/Kempfolds.svg?branch=master)](https://travis-ci.org/dmunn/Kempfolds)
 
 Utilising a Slackbot, you can return a randomised Kempfolds image
 
