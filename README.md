@@ -3,38 +3,42 @@
 <!-- PROJECT SHIELDS -->
 [![Build Status](https://travis-ci.org/dmunn/Kempfolds.svg?branch=master)](https://travis-ci.org/dmunn/Kempfolds)
 
-Utilising a Slackbot, you can return a randomised Kempfolds image
+Get a random Kemfolds image from [Kempfolds blog](http://kempfolds.blogspot.com/)
 
 ## Getting Started
 
 This is still in a PoC stage so at this stage a "Getting Started" section cannot be provided.
 
 ### Development
-TBA
 
-### Testing
-TBA
+#### Prerequisites
+A virtual environment using Python 3.10.0
 
-### Prerequisites
-This is still in a PoC stage so at this stage a "Prerequisites" section cannot be provided.
+Example:
+1. `pyenv virtualenv 3.10.0 kempfolds`
+2. `pyenv activate kempfolds `
 
-### Installing
-This is still in a PoC stage so at this stage an "Installing" section cannot be provided.
+### App
+- `cd app`
+- `pip install -r requirements.txt`
 
-## Running the tests
-TBA
+#### Testing
+- `make test`
+
+### Web
+- `cd app`
+- `pip install -r requirements.txt`
 
 ## Deployment
 TBA
 
 ## Built With
-
 * Python
 * Atoma
+* Flask
 
 ## Contributing
-
-Please contribute once this is out of a PoC state, I am implementing the [Gitflow-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) so if you spot an issue that can be resolved then please go ahead.
+Please contribute once this is out of a PoC state. Development is based around [trunk-based](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development) so if you spot an issue that can be resolved then please go ahead.
 
 ## Versioning
 
