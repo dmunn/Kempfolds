@@ -18,16 +18,15 @@ Example - using `pyenv`:
 1. `pyenv virtualenv 3.10.0 kempfolds`
 2. `pyenv activate kempfolds `
 
+Install the requirements: `pip install -r requirements.txt`
+
 ### App
-- Change directory: `cd app`
-- Install requirements: `pip install -r requirements.txt`
 
 #### Testing
 - Run unittests: `make test`
 
 ### Web
 - Change directory: `cd app`
-- Install requirements: `pip install -r requirements.txt`
 - Start the webserver: `flask run`
 
 ## Deployment
