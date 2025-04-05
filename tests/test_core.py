@@ -3,7 +3,7 @@ from unittest.mock import patch
 import atoma
 import pytest
 import requests
-from app.Kempfolds.Kempfolds import Kempfolds
+from src.core import Kempfolds
 
 
 class TestKempImages:
@@ -19,7 +19,7 @@ class TestKempImages:
         expected_value = "path/to/kemp/image.jpg"
 
         # Mock the get_random_kemp() method to return the expected value
-        with patch("app.Kempfolds.Kempfolds.get_random_kemp") as mock_method:
+        with patch("src.core.Kempfolds.get_random_kemp") as mock_method:
             mock_method.return_value = expected_value
 
             # Call the method under test

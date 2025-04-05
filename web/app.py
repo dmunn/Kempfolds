@@ -1,9 +1,11 @@
-from flask import Flask, render_template
-from ..app.Kempfolds.Kempfolds import Kempfolds
 import logging
+
+from flask import Flask, render_template
+from src.core import Kempfolds
 
 logger = logging.getLogger(__name__)
 app = Flask(__name__)
+
 
 @app.route("/")
 def kempfold():
@@ -15,5 +17,4 @@ def kempfold():
 
     logger.info(f"kemp_image value: {kemp_image}")
 
-    return render_template('index.html', url=kemp_image)
-
+    return render_template("index.html", url=kemp_image)
