@@ -3,13 +3,15 @@ venv
 bin
 lib
 pyvenv.cfg
+
+# Development Artifacts
+.coverage
 **/__pycache__*
 pip-selfcheck.json
+*.cache
+app/.coverage
+app/.pytest*
+app/tests/.coverage
 
 # IDEs
 .idea
-/bin
-/lib
-pyvenv.cfg
-
-*.cache
