@@ -14,20 +14,21 @@ This is still in a PoC stage so at this stage a "Getting Started" section cannot
 #### Prerequisites
 A virtual environment using Python 3.10.0
 
-Example:
+Example - using `pyenv`:
 1. `pyenv virtualenv 3.10.0 kempfolds`
 2. `pyenv activate kempfolds `
 
 ### App
-- `cd app`
-- `pip install -r requirements.txt`
+- Change directory: `cd app`
+- Install requirements: `pip install -r requirements.txt`
 
 #### Testing
-- `make test`
+- Run unittests: `make test`
 
 ### Web
-- `cd app`
-- `pip install -r requirements.txt`
+- Change directory: `cd app`
+- Install requirements: `pip install -r requirements.txt`
+- Start the webserver: `flask run`
 
 ## Deployment
 TBA
