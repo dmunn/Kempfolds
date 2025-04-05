@@ -26,8 +26,16 @@ Install the requirements: `pip install -r requirements.txt`
 - Run unittests: `make test`
 
 ### Web
+
+#### Locally
 - Change directory: `cd app`
 - Start the webserver: `flask run`
+- Access site using `http://localhost:5000`
+
+#### Containerised
+- Build image: `docker build -t kempfolds .`
+- Run container: `docker run -p 8080:80 kempfolds`
+- Access site using `http://localhost:8080`
 
 ## Deployment
 TBA
