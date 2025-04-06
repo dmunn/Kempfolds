@@ -21,9 +21,15 @@
 - Grab the "ALB_URL" and terraform output and enter it into your browser of choice, accept the HTTPS warning and proceed.
 
 ## Development
+
+### Infra
 If you would like to create different settings for the environments, mapped to different accounts then please override the existing variables found within the `variables.tf` file by adding a new value within the correct environment specific variable file, found within the `vars/{environment}.tfvars` directory.
 
 **Note:** There are no overridden values in these environment specific files as the configuration is designed, currently, for parity regardless of environment / account.
+
+### Web
+
+- If you update the HTML within the application then please follow the second step found in the Bootstrap section above. This will create a new container, upload it and ECS will pull it and deploy it.
 
 ## Deploying to multiple AWS accounts
 There are multiple ways to achieve this:
