@@ -38,7 +38,13 @@ Install the requirements: `pip install -r requirements.txt`
 - Access site using `http://localhost:8080`
 
 ## Deployment
-TBA
+See [infra/README.md](./infra/README.md) for more information
+
+## TODO
+- Store static assets in S3 when hosting remotely (AWS)
+    - Use [Flask-S3](https://flask-s3.readthedocs.io/en/latest/) to support this
+    - Once added an additional feature can be enabled, speedier static asset updates as it no longer depends on rebuilding the container. A new action should be added to covering the commands to update them, see [Uploading your Static Assets](https://flask-s3.readthedocs.io/en/latest/#uploading-your-static-assets)
+- Fix Kempolds instance initialisation - currently too many bootstrapping events to create a usable class object.
 
 ## Built With
 * Python

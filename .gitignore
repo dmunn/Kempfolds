@@ -13,5 +13,9 @@ app/.coverage
 app/.pytest*
 app/tests/.coverage
 
+# Infra
+infra/.terraform
+infra/.terraform*
+
 # IDEs
 .idea
