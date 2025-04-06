@@ -3,11 +3,12 @@
 <!-- PROJECT SHIELDS -->
 [![Build Status](https://travis-ci.org/dmunn/Kempfolds.svg?branch=master)](https://travis-ci.org/dmunn/Kempfolds)
 
-Get a random Kemfolds image from [Kempfolds blog](http://kempfolds.blogspot.com/)
+Get a random Kemfolds image from [Kempfolds blog](http://kempfolds.blogspot.com/).
+
+The mini application found within the `src` is a means to an end. It's not a strategic solution by any means so please do keep that in mind when reviewing.
+An idea to rearchitect and turn the `src` code into a scraper and store the assets within an unstructured / file store (e.g. S3). That would have a knock on effect of course of the flask app.
 
 ## Getting Started
-
-This is still in a PoC stage so at this stage a "Getting Started" section cannot be provided.
 
 ### Development
 
