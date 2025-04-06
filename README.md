@@ -54,10 +54,6 @@ See [infra/README.md](./infra/README.md) for more information
 ## Contributing
 Please contribute once this is out of a PoC state. Development is based around [trunk-based](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development) so if you spot an issue that can be resolved then please go ahead.
 
-## Versioning
-
-I use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/dmunn/Kempfolds/tags).
-
 ## License
 
 This project is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.0 UK: England & Wales License License - see the [LICENSE](LICENSE) file for details
