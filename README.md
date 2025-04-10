@@ -1,4 +1,4 @@
-# Kempfolds Slack Bot
+# Kempfolds
 
 <!-- PROJECT SHIELDS -->
 [![Build Status](https://travis-ci.org/dmunn/Kempfolds.svg?branch=master)](https://travis-ci.org/dmunn/Kempfolds)
