@@ -1,8 +1,5 @@
 # Kempfolds
 
-<!-- PROJECT SHIELDS -->
-[![Build Status](https://travis-ci.org/dmunn/Kempfolds.svg?branch=master)](https://travis-ci.org/dmunn/Kempfolds)
-
 Get a random Kemfolds image from [Kempfolds blog](http://kempfolds.blogspot.com/).
 
 The mini application found within the `src` is a means to an end. It's not a strategic solution by any means so please do keep that in mind when reviewing.
