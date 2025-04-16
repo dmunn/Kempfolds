@@ -35,7 +35,7 @@ Install the requirements: `pip install -r requirements.txt`
 - Run container: `docker run -p 8080:80 kempfolds`
 - Access site using `http://localhost:8080`
 
-## Deployment
+## Deployment 🚀
 See [infra/README.md](./infra/README.md) for more information
 
 ## TODO
