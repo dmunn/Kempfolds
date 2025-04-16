@@ -36,11 +36,12 @@ class Kempfolds(object):
             # Return the parsed feed data
             return feed_data
         except requests.exceptions.RequestException as error:
-            # If there is an error fetching the posts, raise an exception with the error message
             raise Exception(f"Error fetching posts: {error}")
 
     def return_kemps(self):
-        """Parse the content of the Atom feed entries for KempfoldsSlackbot images, if found store each that is found"""
+        """Parse the content of the Atom feed entries for KempfoldsSlackbot
+        images, if found store each that is found
+        """
         feed = self.get_posts()
         entries = feed.entries
 
