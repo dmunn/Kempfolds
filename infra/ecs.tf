@@ -71,8 +71,6 @@ module "ecs_service" {
   container_definitions = {
     "${var.project_name}" = {
       name      = "${var.project_name}"
-      cpu       = 512
-      memory    = 1024
       essential = true
       image     = "${module.public_ecr.repository_url}:latest"
       port_mappings = [
