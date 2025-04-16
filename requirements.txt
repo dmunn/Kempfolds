@@ -1,6 +1,6 @@
 # src
 atoma==0.0.17
-requests==2.26.0
+requests==2.32.2
 bs4==0.0.1
 responses==0.16.0
 pytest==8.3.5
