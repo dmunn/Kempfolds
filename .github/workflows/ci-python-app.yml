@@ -7,7 +7,7 @@ on:
   push:
     branches: [$default-branch]
   pull_request:
-    types: [opened]
+    types: [opened,reopened]
 
 permissions:
   contents: read
