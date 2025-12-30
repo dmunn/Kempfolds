@@ -65,28 +65,17 @@ module "ecs_service" {
 
   assign_public_ip = true
 
+  requires_compatibilities = ["FARGATE"]
+
   cpu    = 1024
   memory = 4096
 
-  container_definitions = {
-    "${var.project_name}" = {
-      name      = "${var.project_name}"
-      essential = true
-      image     = "${module.public_ecr.repository_url}:latest"
-      port_mappings = [
-        {
-          name          = "${var.project_name}"
-          containerPort = 80
-          protocol      = "tcp"
-        }
-      ]
-
-      readonly_root_filesystem = false
-
-      enable_cloudwatch_logging = true
-      memory_reservation        = 100
-    }
-  }
+  # Create task definition file seperately to allow for continuous deployment using automation
+  create_task_definition    = false
+  task_definition_arn       = aws_ecs_task_definition.task_definition.arn
+  create_task_exec_iam_role = true
+  create_task_exec_policy   = true
+  create_tasks_iam_role     = true
 
   load_balancer = {
     service = {
