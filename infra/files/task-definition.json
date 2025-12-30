@@ -1,0 +1,39 @@
+[
+  {
+    "name": "kempfolds",
+    "image": "TODO: Env Var",
+    "cpu": 0,
+    "memoryReservation": 100,
+    "portMappings": [
+      {
+        "name": "kempfolds",
+        "containerPort": 80,
+        "hostPort": 80,
+        "protocol": "tcp"
+      }
+    ],
+    "essential": true,
+    "environment": [],
+    "mountPoints": [],
+    "volumesFrom": [],
+    "linuxParameters": {
+      "initProcessEnabled": false
+    },
+    "startTimeout": 30,
+    "stopTimeout": 120,
+    "user": "0",
+    "privileged": false,
+    "readonlyRootFilesystem": false,
+    "interactive": false,
+    "pseudoTerminal": false,
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-group": "/aws/ecs/dev-kempfolds",
+        "awslogs-region": "eu-west-1",
+        "awslogs-stream-prefix": "ecs"
+      }
+    },
+    "systemControls": []
+  }
+]
