@@ -3,7 +3,7 @@ atoma==0.0.17
 requests==2.32.4
 bs4==0.0.1
 responses==0.16.0
-pytest==8.3.5
+pytest==9.0.3
 coverage==7.2.7
 flake8==6.0.0
 
